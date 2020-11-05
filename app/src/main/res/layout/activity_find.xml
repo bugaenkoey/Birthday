@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/et_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="@string/data"
+            android:gravity="center">
+        </EditText>
+        <EditText
+            android:id="@+id/et_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/surname"
+            android:textSize="25sp"
+            android:gravity="center"
+            >
+        </EditText>
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:textSize="25sp"
+            android:gravity="center"
+
+            >
+        </EditText>
+        <EditText
+            android:id="@+id/et_patronymic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/patronymic"
+            android:textSize="25sp"
+            android:gravity="center"
+
+            >
+        </EditText>
+        <EditText
+            android:id="@+id/et_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/event"
+            android:textSize="25sp"
+            android:gravity="center"
+
+            >
+        </EditText>
+        <EditText
+            android:id="@+id/et_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/telephone"
+            android:textSize="25sp"
+            android:inputType="phone"
+            android:gravity="center"
+
+            >
+        </EditText>
+        <EditText
+            android:id="@+id/et_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/more"
+            android:textSize="25sp"
+            android:gravity="center"
+
+            >
+        </EditText>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="45sp"
+    android:text="@string/find">
+
+</Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="45sp"
+            android:text="@string/cancel">
+
+        </Button>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

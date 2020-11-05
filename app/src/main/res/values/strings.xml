@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Birthday</string>
+
+    <string name="data">Data</string>
+    <string name="event">event</string>
+
+    <string name="surname">surname</string>
+    <string name="name">name</string>
+    <string name="patronymic">patronymic</string>
+    <string name="telephone">telephone</string>
+
+    <string name="more">more</string>
+    <string name="find">find</string>
+    <string name="cancel">Cancel</string>
+    <string name="action_settings">Setting</string>
+    <string name="action_time">Time MSG</string>
+    <string name="action_theme_dark">Theme Dark</string>
+    <string name="action_author">Autor</string>
+    <string name="action_dark_switch">Dark Theme</string>
+
 </resources>
