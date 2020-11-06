@@ -7,9 +7,9 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.DatePicker;
 import android.widget.ListView;
 import android.widget.Switch;
@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
     String msg;
     String timeMsg;
     Boolean dark = true;
-    String dateVent;
+    String dateEvent;
+    String TAG = "myTAG";
     @SuppressLint("UseSwitchCompatOrMaterialCode")
     Switch switchMenu;
 
@@ -34,7 +35,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
 //        setContentView(R.layout.activity_find);
-        setContentView(R.layout.activity_persones);
+//        setContentView(R.layout.switch_dark);
+//        setContentView(R.layout.activity_person_event);
+//        setContentView(R.layout.activity_list_persone);
+        setContentView(R.layout.activity_list_dat);
+//        setContentView(R.layout.activity_del_confirm);
+//        setContentView(R.layout.activity_find);
+//        setContentView(R.layout.activity_persones);
         // создаем объект для создания и управления версиями БД
         dbHelper = new DBHelper(this);
         ListView lvPersones = (ListView) this.findViewById(R.id.list_persones);
@@ -59,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
         switch (id) {
             case R.id.action_time: {
               timeMsg =  timeMsg();
+              Toast.makeText(this,"Vernulo" + timeMsg, Toast.LENGTH_LONG).show();
+                Log.d(TAG,"vrnulo ======== "+ timeMsg);
             }
             break;
             case R.id.action_theme_dark: {
@@ -74,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
 //        Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"POSLE Vernulo" + timeMsg, Toast.LENGTH_LONG).show();
+        Log.d(TAG,"Posle vernulo ======== "+ timeMsg);
 
         return super.onOptionsItemSelected(item);
 
@@ -100,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(DialogInterface dialog, int which) {
                  String txt = ((day[0] < 10) ? "0" : "") + day[0] + "/" + ((month[0] < 9) ? "0" : "") + (month[0] + 1) + "/" + year[0];
                     Toast.makeText(MainActivity.this, "Выбранная	дата	дд/мм/гггг	:	" + txt, Toast.LENGTH_SHORT).show();
-                    dateVent=txt;
+                    dateEvent =txt;
                 }
             });
             picker.setButton(DialogInterface.BUTTON_NEGATIVE, "Отменить", new DialogInterface.OnClickListener() {
@@ -111,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
             });
             picker.show();
 
-return dateVent;
+return dateEvent;
     }
     private void switchDark() {
         //       msg = "theme_dark";

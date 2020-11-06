@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/surname_persone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </EditText>
+    <EditText
+        android:id="@+id/name_persone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </EditText>
+    <EditText
+        android:id="@+id/patronomic_persone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </EditText>
+    <EditText
+        android:id="@+id/telephone_persone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </EditText>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cancel_persone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel">
+
+        </Button>
+        <Button
+            android:id="@+id/del_persone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/del">
+
+        </Button>
+        <Button
+            android:id="@+id/ok_persone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok">
+
+        </Button>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+    <Button
+        android:id="@+id/add_persone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+">
+
+    </Button>
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,5 +17,12 @@
     <string name="action_theme_dark">Theme Dark</string>
     <string name="action_author">Autor</string>
     <string name="action_dark_switch">Dark Theme</string>
+    <string name="del">Del</string>
+    <string name="ok">OK</string>
+    <string name="del_confirm">Вы хотите удалить?</string>
+    <string name="go_calendar">Calendar</string>
+    <string name="go_persones">Persone</string>
+    <string name="previev">Previev</string>
+    <string name="next">Next</string>
 
 </resources>

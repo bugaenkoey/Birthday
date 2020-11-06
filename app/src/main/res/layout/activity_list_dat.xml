@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00B2C0"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_prev_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00e4e5"
+                android:text="@string/previev">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="#00e4e5"
+                android:padding="10dp"
+                android:text="@string/more" />
+
+            <Button
+                android:id="@+id/btn_next_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00e4e5"
+                android:text="@string/next" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_date_month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/go_persones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/go_persones">
+
+        </Button>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

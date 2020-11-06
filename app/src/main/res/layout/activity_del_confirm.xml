@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#32FF0202"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="35dp"
+
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/del_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/del_confirm"
+            android:textColor="#000000"
+            android:textSize="48sp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/del_confirm_censcel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FA6AF699"
+                android:text="@string/cancel">
+
+            </Button>
+
+            <Button
+                android:id="@+id/del_confirm_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#6FFB0303"
+                android:text="@string/ok">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
